@@ -11,11 +11,27 @@
   justify-content: space-evenly;
   align-items: center;
   height: 20vh;
+
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 #title_typo {
+  cursor: pointer;
   font-size: 15px;
   color: black;
   font-family: Lato-Regular;
+}
+#title_typo:hover {
+  color: #226cfc;
+  font-weight: 600;
+}
+#typo_menu_head:hover {
+  color: #226cfc;
+  font-weight: 600;
+}
+.menu_typo:hover {
+  color: #226cfc;
 }
 .divider_line {
   border-bottom: 1px solid #a2a2a2;
@@ -25,23 +41,35 @@
   width: 80%;
 }
 #menu_items {
+  padding-left: 10%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+#menu_items:hover {
+  padding-left: 7%;
+  border-left: 8px solid #226cfc;
+  transition: 0.2s;
+}
 #typo_menu_head {
+  padding-left: 10%;
   font-size: 16px;
+  cursor: pointer;
   font-family: Lato-Bold;
 }
 .Menu {
   padding-top: 6%;
-  padding-left: 10%;
   height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+
+  -webkit-animation: scale-up-center 0.7s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 #icon_1 {
   cursor: pointer;
@@ -51,12 +79,16 @@
   color: #226cfc;
 }
 .menu_typo {
+  cursor: pointer;
   font-size: 18px;
   font-family: Lato-Regular;
   color: #272727;
 }
 .botpart {
   height: 34vh;
+  -webkit-animation: scale-up-center 0.9s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .btnbot {
   height: 54px;
@@ -80,4 +112,24 @@
 .btnbot:hover {
   color: #226cfc !important;
   background-color: white !important;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
