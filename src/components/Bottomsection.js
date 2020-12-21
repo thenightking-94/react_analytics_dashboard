@@ -50,10 +50,14 @@ export default function BottomSection() {
                         <Typography className='typo_bot_name'>324234</Typography>
                         <p className='typo_bot_header'>Total Impressions</p>
                     </span>
-                    <span className='col_direc'>
-                        <Typography className='typo_bot_name'>2342</Typography>
-                        <p className='typo_bot_header'>Coverted Users</p>
+                    <span className='row_direc'>
+                        <span className='col_direc'>
+                            <Typography className='typo_bot_name'>2342</Typography>
+                            <p className='typo_bot_header'>Coverted Users</p>
+                        </span>
+                        <Avatar src={cross} />
                     </span>
+
 
                 </div>
 
@@ -81,10 +85,15 @@ export default function BottomSection() {
                         <Typography className='typo_bot_name'>2323</Typography>
                         <p className='typo_bot_header'>Total Impressions</p>
                     </span>
-                    <span className='col_direc'>
-                        <Typography className='typo_bot_name'>234</Typography>
-                        <p className='typo_bot_header'>Coverted Users</p>
+                    
+                    <span className='row_direc'>
+                        <span className='col_direc'>
+                            <Typography className='typo_bot_name'>234</Typography>
+                            <p className='typo_bot_header'>Coverted Users</p>
+                        </span>
+                        <Avatar src={cross} />
                     </span>
+
 
                 </div>
 
@@ -98,24 +107,32 @@ export default function BottomSection() {
                             Robert JohnStone
                     </Typography>
                     </span>
+
                     <span className='row_direc' id='btn_bot'>
                         <button className="btnBot">
                             <p id="active">Active</p>
                             <p id="paused">Paused</p>
                         </button>
                     </span>
+
                     <span className='col_direc'>
                         <Typography className='typo_bot_name'>234</Typography>
                         <p className='typo_bot_header'>Total Users</p>
                     </span>
+
                     <span className='col_direc'>
                         <Typography className='typo_bot_name'>222413</Typography>
                         <p className='typo_bot_header'>Total Impressions</p>
                     </span>
-                    <span className='col_direc'>
-                        <Typography className='typo_bot_name'>4535</Typography>
-                        <p className='typo_bot_header'>Coverted Users</p>
+
+                    <span className='row_direc'>
+                        <span className='col_direc'>
+                            <Typography className='typo_bot_name'>4535</Typography>
+                            <p className='typo_bot_header'>Coverted Users</p>
+                        </span>
+                        <Avatar src={cross} />
                     </span>
+
 
                 </div>
 
