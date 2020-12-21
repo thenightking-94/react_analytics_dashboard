@@ -3,3 +3,57 @@
   height: 100vh;
   padding: 0px !important;
 }
+#header {
+  background-color: #ffffff !important;
+  padding-left: 35px;
+  padding-right: 70px;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 45px;
+}
+.divider_line_chart {
+  border-bottom: 1px solid #a2a2a2;
+  height: 2px;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
+}
+#over_typo {
+  cursor: pointer;
+  font-size: 38px;
+  font-family: Lato-Regular;
+}
+#over_typo:hover {
+  color: #226cfc;
+}
+.chartSection {
+  height: 45vh;
+}
+.chart {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+#bars {
+  cursor: pointer;
+  width: 15px;
+  background-color: #226cfc !important;
+  margin-left: 15px;
+  border-radius: 0px !important;
+}
+#barslight {
+  cursor: pointer;
+  width: 15px;
+  background-color: #e1f0fa !important;
+  margin-left: 15px;
+  border-radius: 0px !important;
+}
+#bars:hover,
+#barslight:hover {
+  background-color: red !important;
+}
