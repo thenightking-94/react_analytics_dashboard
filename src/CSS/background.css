@@ -57,3 +57,20 @@
 #barslight:hover {
   background-color: red !important;
 }
+.bot_section {
+  margin-top: 50px;
+  height: 45px;
+  padding: 20px;
+}
+#insideBot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexadder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
