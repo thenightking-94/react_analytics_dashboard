@@ -57,11 +57,32 @@
 #barslight:hover {
   background-color: red !important;
 }
+
 .bot_section {
   margin-top: 50px;
   height: 40vh;
   padding: 20px;
+
+  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 #insideBot {
   display: flex;
   flex-direction: column;
@@ -137,4 +158,24 @@
 }
 #btn_bot {
   margin-left: -120px;
+}
+@media only screen and (max-width: 760px) {
+  #header {
+    height: 8vh !important;
+    padding-bottom: 0px;
+  }
+  .chart_mobile {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  #bars_mobile {
+    cursor: pointer;
+    width: 8px;
+    background-color: #226cfc !important;
+    margin-left: 5px;
+    border-radius: 0px !important;
+  }
 }

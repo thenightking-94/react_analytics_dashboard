@@ -70,7 +70,9 @@ export default function LeftBar() {
 
 
             <div className='botpart'>
-                <Divider style={{ height: '15vh', background: 'transparent' }} />
+
+                <Divider style={{ height: window.innerWidth > `${760}` ? '15vh' : '2vh', background: 'transparent' }} />
+
                 <div id='btnsection'>
                     <Button className='btnbot'>
                         Upgrade Plan

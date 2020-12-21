@@ -17,15 +17,24 @@ export default function BottomSection() {
                     <Typography className="typo_bot_header">
                         Status
                     </Typography>
-                    <Typography className="typo_bot_header">
-                        Users
+                    {
+                        window.innerWidth > `${760}` &&
+                        <Typography className="typo_bot_header">
+                            Users
                     </Typography>
-                    <Typography className="typo_bot_header">
-                        Impression
+                    }
+                    {
+                        window.innerWidth > `${760}` &&
+                        <Typography className="typo_bot_header">
+                            Impression
                     </Typography>
-                    <Typography className="typo_bot_header">
-                        Conversion
+                    }
+                    {
+                        window.innerWidth > `${760}` &&
+                        <Typography className="typo_bot_header">
+                            Conversion
                     </Typography>
+                    }
                 </div>
 
                 <div className='flexAdder'>
@@ -42,21 +51,30 @@ export default function BottomSection() {
                             <p id="paused">Paused</p>
                         </button>
                     </span>
-                    <span className='col_direc'>
-                        <Typography className='typo_bot_name'>189</Typography>
-                        <p className='typo_bot_header'>Total Users</p>
-                    </span>
-                    <span className='col_direc'>
-                        <Typography className='typo_bot_name'>324234</Typography>
-                        <p className='typo_bot_header'>Total Impressions</p>
-                    </span>
-                    <span className='row_direc'>
+                    {
+                        window.innerWidth > `${760}` &&
                         <span className='col_direc'>
-                            <Typography className='typo_bot_name'>2342</Typography>
-                            <p className='typo_bot_header'>Coverted Users</p>
+                            <Typography className='typo_bot_name'>189</Typography>
+                            <p className='typo_bot_header'>Total Users</p>
                         </span>
-                        <Avatar src={cross} />
-                    </span>
+                    }
+                    {
+                        window.innerWidth > `${760}` &&
+                        <span className='col_direc'>
+                            <Typography className='typo_bot_name'>324234</Typography>
+                            <p className='typo_bot_header'>Total Impressions</p>
+                        </span>
+                    }
+                    {
+                        window.innerWidth > `${760}` &&
+                        <span className='row_direc'>
+                            <span className='col_direc'>
+                                <Typography className='typo_bot_name'>2342</Typography>
+                                <p className='typo_bot_header'>Coverted Users</p>
+                            </span>
+                            <Avatar src={cross} />
+                        </span>
+                    }
 
 
                 </div>
@@ -77,22 +95,30 @@ export default function BottomSection() {
                             <p id="paused">Paused</p>
                         </button>
                     </span>
-                    <span className='col_direc'>
-                        <Typography className='typo_bot_name'>231</Typography>
-                        <p className='typo_bot_header'>Total Users</p>
-                    </span>
-                    <span className='col_direc'>
-                        <Typography className='typo_bot_name'>2323</Typography>
-                        <p className='typo_bot_header'>Total Impressions</p>
-                    </span>
-                    
-                    <span className='row_direc'>
+                    {
+                        window.innerWidth > `${760}` &&
                         <span className='col_direc'>
-                            <Typography className='typo_bot_name'>234</Typography>
-                            <p className='typo_bot_header'>Coverted Users</p>
+                            <Typography className='typo_bot_name'>231</Typography>
+                            <p className='typo_bot_header'>Total Users</p>
                         </span>
-                        <Avatar src={cross} />
-                    </span>
+                    }
+                    {
+                        window.innerWidth > `${760}` &&
+                        <span className='col_direc'>
+                            <Typography className='typo_bot_name'>2323</Typography>
+                            <p className='typo_bot_header'>Total Impressions</p>
+                        </span>
+                    }
+                    {
+                        window.innerWidth > `${760}` &&
+                        <span className='row_direc'>
+                            <span className='col_direc'>
+                                <Typography className='typo_bot_name'>234</Typography>
+                                <p className='typo_bot_header'>Coverted Users</p>
+                            </span>
+                            <Avatar src={cross} />
+                        </span>
+                    }
 
 
                 </div>
@@ -114,29 +140,33 @@ export default function BottomSection() {
                             <p id="paused">Paused</p>
                         </button>
                     </span>
-
-                    <span className='col_direc'>
-                        <Typography className='typo_bot_name'>234</Typography>
-                        <p className='typo_bot_header'>Total Users</p>
-                    </span>
-
-                    <span className='col_direc'>
-                        <Typography className='typo_bot_name'>222413</Typography>
-                        <p className='typo_bot_header'>Total Impressions</p>
-                    </span>
-
-                    <span className='row_direc'>
+                    {
+                        window.innerWidth > `${760}` &&
                         <span className='col_direc'>
-                            <Typography className='typo_bot_name'>4535</Typography>
-                            <p className='typo_bot_header'>Coverted Users</p>
+                            <Typography className='typo_bot_name'>234</Typography>
+                            <p className='typo_bot_header'>Total Users</p>
                         </span>
-                        <Avatar src={cross} />
-                    </span>
+                    }
+                    {
+                        window.innerWidth > `${760}` &&
+                        <span className='col_direc'>
+                            <Typography className='typo_bot_name'>222413</Typography>
+                            <p className='typo_bot_header'>Total Impressions</p>
+                        </span>
+                    }
+                    {
+                        window.innerWidth > `${760}` &&
+                        <span className='row_direc'>
+                            <span className='col_direc'>
+                                <Typography className='typo_bot_name'>4535</Typography>
+                                <p className='typo_bot_header'>Coverted Users</p>
+                            </span>
+                            <Avatar src={cross} />
+                        </span>
+                    }
 
 
                 </div>
-
-
             </div>
         </div>
     )

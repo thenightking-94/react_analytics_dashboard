@@ -133,3 +133,27 @@
     transform: scale(1);
   }
 }
+
+@media only screen and (max-width: 760px) {
+  .flexaddercol {
+    height: 25vh;
+  }
+  .Menu {
+    height: 30vh;
+  }
+  .btnbot {
+    height: 40px;
+    width: 135px;
+    font-size: 12px !important;
+  }
+  #btnsection {
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
+  .botpart {
+    height: 25vh;
+  }
+  .leftback {
+    height: 75vh;
+  }
+}

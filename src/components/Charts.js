@@ -4,6 +4,7 @@ import '../CSS/background.css';
 import '../CSS/leftbar.css';
 import Cross from '../assets/icon_cross.PNG';
 import sampleData from "./sampleData";
+import { DesktopWindowsOutlined } from '@material-ui/icons';
 
 const items = sampleData();
 
@@ -37,18 +38,42 @@ const Charts = () => {
             </div>
 
             <div className='divider_line_chart' />
+            {
+                window.innerWidth > `${760}` &&
+                <div className='chart'>
+                    {preArray && preArray.map(item =>
+                        <Paper id='barslight' key={item.Letter} style={{ height: (item.Freq / 80) * 300 + "px" }}>
+                        </Paper>)}
+                    {array && array.map(item =>
+                        <Paper id='bars' key={item.Letter} style={{ height: (item.Freq / 80) * 300 + "px" }}>
+                        </Paper>)}
+                    {postArray && postArray.map(item =>
+                        <Paper id='barslight' key={item.Letter} style={{ height: (item.Freq / 80) * 300 + "px" }}>
+                        </Paper>)}
+                </div>
+            }
+            {
+                window.innerWidth < `${760}` &&
+                <div>
+                    <div className='chart_mobile'>
+                        {preArray && preArray.map(item =>
+                            <Paper id='barslight' key={item.Letter} style={{ height: (item.Freq / 80) * 100 + "px" }}>
+                            </Paper>)}
+                    </div>
+                    <div className='chart_mobile'>
+                        {array && array.map(item =>
+                            <Paper id='bars_mobile' key={item.Letter} style={{ height: (item.Freq / 80) * 100 + "px" }}>
+                            </Paper>)}
+                    </div>
+                    <div className='chart_mobile'>
 
-            <div className='chart'>
-                {preArray && preArray.map(item =>
-                    <Paper id='barslight' key={item.Letter} style={{ height: (item.Freq / 80) * 300 + "px" }}>
-                    </Paper>)}
-                {array && array.map(item =>
-                    <Paper id='bars' key={item.Letter} style={{ height: (item.Freq / 80) * 300 + "px" }}>
-                    </Paper>)}
-                {postArray && postArray.map(item =>
-                    <Paper id='barslight' key={item.Letter} style={{ height: (item.Freq / 80) * 300 + "px" }}>
-                    </Paper>)}
-            </div>
+                        {postArray && postArray.map(item =>
+                            <Paper id='barslight' key={item.Letter} style={{ height: (item.Freq / 80) * 100 + "px" }}>
+                            </Paper>)}
+                    </div>
+                </div>
+            }
+
 
         </div >
     )
