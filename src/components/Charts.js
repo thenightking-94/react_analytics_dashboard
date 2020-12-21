@@ -1,4 +1,4 @@
-import { Typography, Divider, Paper } from '@material-ui/core';
+import { Typography, Paper } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import '../CSS/background.css';
 import '../CSS/leftbar.css';
@@ -38,8 +38,6 @@ const Charts = () => {
 
             <div className='divider_line_chart' />
 
-            <Divider style={{ background: 'transparent', height: '1vh' }} />
-
             <div className='chart'>
                 {preArray && preArray.map(item =>
                     <Paper id='barslight' key={item.Letter} style={{ height: (item.Freq / 80) * 300 + "px" }}>
@@ -51,7 +49,6 @@ const Charts = () => {
                     <Paper id='barslight' key={item.Letter} style={{ height: (item.Freq / 80) * 300 + "px" }}>
                     </Paper>)}
             </div>
-
 
         </div >
     )
